@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#070b1f">
+  <meta name="description" content="Un univers d'étoiles, de souvenirs et une lettre spéciale pour Carol.">
+  <title>L'univers de Carol</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main id="sky">
+    <div class="layer" id="nightBg"></div>
+    <div class="layer" id="dayBg"></div>
+    <div class="layer"><canvas id="bg"></canvas></div>
+    <div class="layer" id="sun"></div>
+
+    <svg id="hills" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 120V62C40 40 80 36 130 54C175 70 210 44 260 34C310 24 355 40 400 56V120Z"/>
+    </svg>
+
+    <header>
+      <p class="for">Un cadeau pour toi</p>
+      <h1 id="title">L'univers de Carol</h1>
+      <p id="hint" aria-live="polite">Touche les étoiles qui brillent.</p>
+    </header>
+
+    <div id="field">
+      <svg id="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+    </div>
+
+    <footer>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+      <button class="ghost" id="soundBtn" type="button" aria-pressed="true">Son : oui</button>
+    </footer>
+  </main>
+
+  <div id="card" hidden>
+    <div class="backdrop" id="cardBackdrop"></div>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="cardTitle">
+      <p class="tag" id="cardTag"></p>
+      <h2 id="cardTitle"></h2>
+      <img id="cardImg" alt="" hidden>
+      <p class="body" id="cardText"></p>
+      <button class="btn" id="cardClose" type="button">Fermer</button>
+    </div>
+  </div>
+
+  <section id="letter" hidden aria-label="Lettre pour Carol">
+    <div class="paper" id="paper"></div>
+  </section>
+
+  <button class="ghost" id="reread" type="button" hidden>Relire la lettre</button>
+</body>
+</html>
