@@ -19,7 +19,7 @@
         x: 80, y: 24,
         title: "Ta sensibilité",
         text: "Tu ressens les choses fort, et c'est ce qui te rend si humaine. Chez toi, ce n'est pas une faiblesse. C'est une lumière.",
-        photo: "images/souvenirs/sensibilite.jpg"
+        photo: "images/souvenirs/sensibilite.webp"
       },
       {
         x: 76, y: 50,
@@ -37,13 +37,13 @@
         x: 20, y: 56,
         title: "Ce qui nous reste",
         text: "Les discussions, les fous rires, les silences sans gêne. Tout ça compte pour moi.",
-        photo: "images/souvenirs/souvenirs.jpg"
+        photo: "images/souvenirs/souvenirs.webp"
       },
       {
         x: 30, y: 82,
         title: "Mon souhait",
         text: "Que cette nouvelle année t'apporte autant de douceur que tu en donnes aux autres.",
-        photo: "images/souvenirs/souhait.jpg"
+        photo: "images/souvenirs/souhait.webp"
       },
       { x: 68, y: 78, final: true }
     ],
